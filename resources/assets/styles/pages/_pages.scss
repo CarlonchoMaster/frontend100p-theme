@@ -1,0 +1,67 @@
+.hero.has-carousel {
+  min-height: (480px - $container-offset)*(9/16);
+
+  @include c-mobile {
+    min-height: ($mobile - $container-offset)*(9/16);
+  }
+
+  @include tablet {
+    min-height: ($tablet - $container-offset)*(9/16);
+  }
+
+  @include desktop {
+    min-height: ($desktop - $container-offset)*(9/16);
+  }
+}
+
+.hero-carousel img {
+  max-width: 480px;
+
+  @include c-mobile {
+    max-width: $mobile;
+  }
+
+  @include tablet {
+    max-width: $tablet;
+  }
+
+  @include desktop {
+    max-width: $desktop - $container-offset;
+  }
+}
+
+.blog-page {
+  .post {
+    margin-bottom: 1em;
+  }
+
+  .post .author {
+    margin-bottom: 0.5em;
+  }
+
+  .post .excerpt {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+  }
+
+  @include c-mobile {
+    .post {
+      margin-bottom: 1.25em;
+    }
+  }
+
+  @include tablet {
+    .post {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  @include desktop {
+    .post {
+      margin-bottom: 2em;
+    }
+  }
+}
+

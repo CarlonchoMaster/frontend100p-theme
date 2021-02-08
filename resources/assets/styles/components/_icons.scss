@@ -1,0 +1,27 @@
+.fa {
+  display: inline-block;
+  width: $body-font-size;
+  max-height: $body-font-size * 1.3;
+
+  &-xs {
+    width: 0.75 * $body-font-size;
+    max-height: $body-font-size * 0.75 * 1.3;
+  }
+
+  &-sm {
+    width: 0.875 * $body-font-size;
+    max-height: $body-font-size * 0.875 * 1.3;
+  }
+
+  &-lg {
+    width: 1.33 * $body-font-size;
+    max-height: $body-font-size * 1.33 * 1.3;
+  }
+
+  @for $i from 2 through 5 {
+    &-#{$i}x {
+      width: $i * $body-font-size;
+      max-height: $body-font-size * $i * 1.3;
+    }
+  }
+}

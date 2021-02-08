@@ -1,0 +1,38 @@
+@mixin c-mobile {
+  @include from($mobile) {
+    @content;
+  }
+}
+
+@mixin hover-hover {
+  @media (hover: hover) {
+    @content;
+  }
+}
+
+@mixin aspectRatioGrid($w, $h) {
+  display: grid;
+  grid-template-columns: repeat($w, 1fr);
+  grid-template-rows: repeat($h, 1fr);
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+}
+
+@mixin aspectRatio($w, $h) {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+
+  &::before {
+    display: block;
+    content: "";
+    padding-top: percentage($h/$w);
+  }
+}

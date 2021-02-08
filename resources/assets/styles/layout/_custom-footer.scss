@@ -1,0 +1,44 @@
+.social-networks {
+  .social-network {
+    display: inline-block;
+    width: $size-3;
+  }
+}
+
+.network-linkedin {
+  .bg-linkedin {
+    fill: var(--brand-linkedin);
+  }
+}
+
+.network-facebook {
+  .bg-facebook {
+    fill: var(--brand-facebook);
+  }
+}
+
+.network-youtube {
+  .bg-youtube {
+    fill: var(--brand-youtube);
+  }
+
+  .youtube-invert {
+    fill: var(--white);
+  }
+}
+
+.network-whatsapp {
+  .bg-whatsapp {
+    fill: var(--brand-whatsapp);
+  }
+
+  .whatsapp-invert {
+    fill: var(--white);
+  }
+}
+
+.footer {
+  @media print {
+    display: none;
+  }
+}

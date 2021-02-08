@@ -1,0 +1,59 @@
+// Update Bulma's global variables
+$family-sans-serif: "Mulish", sans-serif;
+$family-secondary: "Oswald", sans-serif;
+$body-font-size: 1.2rem;
+$small-font-size: 0.875 * $body-font-size;
+$pre-font-size: $small-font-size;
+$pre-code-font-size: $body-font-size;
+$fullhd-enabled: false;
+
+// Variable para los estilos de wordpress
+$spacer: 1em;
+$z-back: -10;
+$z-normal: 1;
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+$variablesInRoots: (
+  primary-100: $primary-100,
+  primary-300: $primary-300,
+  accent: $accent,
+  accent-300: $accent-300,
+  accent-secondary: $accent-secondary,
+  accent-secondary-300: $accent-secondary-300,
+  brand-color: $brand-color,
+  brand-whatsapp: $brand-whatsapp,
+  brand-linkedin: $brand-linkedin,
+  brand-facebook: $brand-facebook,
+  brand-youtube: $brand-youtube,
+  grey-lightest: $grey-lightest
+);
+
+// Variables z-index sobrescritas de los Componentes
+$modal-z: $z-modal;
+$dropdown-content-z: $z-tooltip;
+$navbar-dropdown-z: $z-tooltip;
+$navbar-fixed-z: $z-fixed;
+$navbar-z: $z-normal;
+
+// Breakpoints adicionales
+$mobile: 540px;
+
+// Spacing personalizados
+$spacing-values: ("0": 0, "1": 0.25em, "2": 0.5em, "3": 0.75em, "4": 1em, "5": 1.5em, "6": 3em);
+
+// Tamaño de imagenes personalizadas
+$dimensions: 64 96 128 256;
+
+// Personalizacion de contenido (clase content)
+$content-heading-weight: 700;
+
+// Personalizacion de (clase title)
+$title-weight: 700;
+
+// Personalización de Generics.scss
+$pre-code-font-size: $body-font-size * 0.8;
+
+// Personalizacion de Navbar
+$navbar-height: 3.25rem;

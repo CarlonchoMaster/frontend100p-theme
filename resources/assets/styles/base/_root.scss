@@ -1,0 +1,25 @@
+:root {
+  @each $variable, $value in $variablesInRoots {
+    --#{$variable}: #{$value};
+  }
+
+  @each $name, $pair in $colors {
+    $color: nth($pair, 1);
+    $color-invert: nth($pair, 2);
+
+    --#{$name}: #{$color};
+    --#{$name}-invert: #{$color-invert};
+
+    @if length($pair) >= 4 {
+      $color-light: nth($pair, 3);
+      $color-dark: nth($pair, 4);
+
+      --#{$name}-light: #{$color-light};
+      --#{$name}-dark: #{$color-dark};
+    }
+  }
+
+  @each $name, $shade in $shades {
+    --#{$name}: #{$shade};
+  }
+}

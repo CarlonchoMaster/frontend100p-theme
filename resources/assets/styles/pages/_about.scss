@@ -1,0 +1,145 @@
+.about-page {
+  .has-text-primary-300 {
+    color: var(--primary-300);
+  }
+
+  .is-two-thirds {
+    .presentation {
+      display: none;
+    }
+
+    .title {
+      color: var(--grey-dark);
+    }
+
+    .subtitle {
+      color: var(--primary-300);
+    }
+
+    h2 {
+      display: inline-flex;
+      align-items: center;
+      background-image: linear-gradient(45deg, var(--primary), var(--accent));
+      padding: 0.5em 1em 0.3em 0.5em;
+      clip-path: polygon(0 16%, 100% 0%, 94% 100%, 0 100%);
+      color: var(--white-bis);
+      color-adjust: exact;
+    }
+  }
+
+  .bg-accent {
+    background-color: var(--accent-300);
+    color: var(--grey-lightest);
+    padding: 0;
+    clip-path: url(#shape-cv);
+    width: 100%;
+    order: 0;
+    padding-top: 0.3em;
+    color-adjust: exact;
+
+    strong {
+      color: var(--white-ter);
+    }
+
+    .summary {
+      background-image: linear-gradient(var(--brand-color), var(--accent));
+      padding: 1.5em 0.5em 1.5em 1.9em;
+      clip-path: polygon(0 3.5%, 100% 0%, 100% 100%, 0 97%);
+      color-adjust: exact;
+
+      a {
+        color: var(--accent-secondary);
+      }
+
+      a:hover {
+        color: bulmaDarken($accent-secondary, 8%);
+      }
+    }
+
+    .image {
+      left: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 1em;
+    }
+
+    .social-networks {
+      padding-left: 4em;
+      padding-right: 0.5em;
+      padding-bottom: 1.5em;
+    }
+
+    .social-networks ul {
+      list-style: none;
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    .social-networks ul li a {
+      color: var(--white-ter);
+    }
+
+    h2 {
+      color: var(--white-bis);
+      font-size: 1.25 * $body-font-size;
+    }
+  }
+
+  @include c-mobile {
+    .bg-accent {
+      order: 1;
+      clip-path: url(#shape-cv-mobile);
+    }
+
+    .bg-accent .summary {
+      padding-left: 2.3em;
+    }
+  }
+
+  @include tablet {
+    .bg-accent {
+      order: 1;
+      clip-path: url(#shape-cv-tablet);
+      padding-top: 0.2em;
+    }
+
+    .bg-accent .summary {
+      padding-left: 1.4em;
+    }
+
+    .presentation {
+      display: none;
+    }
+
+    .is-two-thirds .presentation {
+      display: block;
+    }
+  }
+
+  @include desktop {
+    .bg-accent {
+      order: 1;
+      clip-path: url(#shape-cv-desktop);
+      padding-top: 0.2em;
+    }
+  }
+
+  @media print {
+    .bg-accent .summary {
+      font-size: 1rem;
+      padding-left: 1em;
+    }
+
+    h1 {
+      display: none;
+    }
+
+    .is-two-thirds h2 {
+      padding-left: 0.3em;
+    }
+
+    .image.is-256x256 {
+      width: 4.5cm;
+      height: 4.5cm;
+    }
+  }
+}

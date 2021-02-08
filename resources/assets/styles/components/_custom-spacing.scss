@@ -1,0 +1,5 @@
+.mb-5 {
+  @include desktop {
+    margin-bottom: 2em !important;
+  }
+}

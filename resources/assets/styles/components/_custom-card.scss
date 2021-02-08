@@ -1,0 +1,19 @@
+.card {
+  .card-content {
+    padding: 1em;
+
+    .content {
+      padding: 0;
+    }
+
+    .media h2 {
+      font-weight: 700;
+      font-size: $body-font-size * 1.25;
+      margin-bottom: 0;
+    }
+  }
+
+  .media:not(:last-child) {
+    margin-bottom: 1em;
+  }
+}

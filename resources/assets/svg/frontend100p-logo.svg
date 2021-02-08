@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" class="menu-brand-logo" role="img"
+  aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Logo de Frontend 100%</title>
+  <desc id="logoDesc">Te permite regresar a la pagina principal</desc>
+  <g id="Capa_2" data-name="Capa 2">
+    <g id="isotipo">
+      <rect class="logo-bg" width="1080" height="1080" />
+      <polygon class="logo-primary"
+        points="631.36 293.71 635.53 286.51 738.03 286.51 733.62 293.71 449.17 786.29 445.07 793.49 349.79 793.49 342.83 793.49 631.36 293.71" />
+      <path class="logo-primary"
+        d="M431,286.51,256.08,369.62a2.7,2.7,0,0,0-1.55,2.44v49.7a2.7,2.7,0,0,0,1.55,2.44l175,83.11v-69l-99.25-41.4L431,355.51Z" />
+      <path class="logo-primary"
+        d="M649,571.86v69l99.25,41.41L649,723.66v69l174.95-83.1a2.7,2.7,0,0,0,1.55-2.44v-49.7a2.7,2.7,0,0,0-1.55-2.45Z" />
+    </g>
+  </g>
+</svg>

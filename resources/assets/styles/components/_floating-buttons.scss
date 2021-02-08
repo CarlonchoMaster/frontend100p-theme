@@ -1,0 +1,43 @@
+.button.is-floating {
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
+  bottom: 1em;
+  right: 1em;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0.0625em 0.125em rgba(var(--black-ter), 0.05);
+  z-index: $z-fixed;
+  background-color: var(--primary-100);
+  border-color: var(--primary-100);
+  color: var(--black-bis);
+
+  &:hover, &:focus, &:active {
+    background-color: var(--primary-300);
+    border-color: var(--primary-300);
+    color: var(--black-ter);
+  }
+
+  .is-large {
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .is-medium {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .is-small {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
+  @media print {
+    display: none;
+  }
+}

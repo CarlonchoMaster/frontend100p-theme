@@ -1,0 +1,48 @@
+// Colores primarios (primaries colors)
+$brand-color: hsl(210, 100%, 60%);
+$primary: hsl(210, 100%, 66%);
+$primary-100: lighten($primary, 2%);
+$primary-300: darken($primary, 5%);
+
+// Color de enfasis (accent colors)
+$accent: hsl(210, 66%, 42%);
+$accent-300: hsl(210, 52%, 33%);
+$accent-secondary: hsl(38, 100%, 65%);
+$accent-secondary-300: hsl(38, 80%, 42%);
+
+// Colores Neutros (Neutrals colors)
+$black: hsl(210, 16%, 4%);
+$black-bis: hsl(210, 16%, 7%);
+$black-ter: hsl(210, 16%, 14%);
+
+$grey-darker: hsl(210, 16%, 21%);
+$grey-dark: hsl(210, 16%, 29%);
+$grey: hsl(210, 16%, 48%);
+$grey-light: hsl(210, 22%, 71%);
+$grey-lighter: hsl(210, 22%, 82%);
+$grey-lightest: hsl(210, 22%, 88%);
+
+$white-ter: hsl(210, 22%, 92%);
+$white-bis: hsl(210, 22%, 95%);
+$white: hsl(210, 22%, 98%);
+
+$link: $accent-secondary-300;
+
+// Branding Color Social Network
+$brand-whatsapp: #45d354;
+$brand-linkedin: #0077b5;
+$brand-facebook: #4460a0;
+$brand-youtube: #ed2524;
+
+// Colores Invertidos
+$light-invert: $black-ter;
+$dark-invert: $white-ter;
+$primary-invert: $white-bis;
+$link-invert: $white-ter;
+$primary-dark: $accent-300;
+
+// Color de strong
+$strong-color: $accent;
+
+// Colores de Menu.scss
+$menu-label-color: $grey-lighter;

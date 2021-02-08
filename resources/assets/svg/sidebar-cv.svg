@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 960" width="0" height="0">
+  <defs>
+    <clipPath id="shape-cv" clipPathUnits="objectBoundingBox">
+      <ellipse cx="0.5" cy="0.1" rx="0.5" ry="0.1"/>
+      <polygon points="0 0.099, 1 0.099, 1 1, 0.10 1"/>
+    </clipPath>
+    <clipPath id="shape-cv-mobile" clipPathUnits="objectBoundingBox">
+      <ellipse cx="0.5" cy="0.3" rx="0.5" ry="0.3"/>
+      <polygon points="0 0.299, 1 0.299, 1 1, 0.11 1"/>
+    </clipPath>
+    <clipPath id="shape-cv-tablet" clipPathUnits="objectBoundingBox">
+      <ellipse cx="0.5" cy="0.07" rx="0.5" ry="0.07"/>
+      <polygon points="0 0.0699, 1 0.0699, 1 1, 0.12 1"/>
+    </clipPath>
+    <clipPath id="shape-cv-desktop" clipPathUnits="objectBoundingBox">
+      <ellipse cx="0.5" cy="0.06" rx="0.5" ry="0.06"/>
+      <polygon points="0 0.0599, 1 0.0599, 1 1, 0.13 1"/>
+    </clipPath>
+  </defs>
+</svg>

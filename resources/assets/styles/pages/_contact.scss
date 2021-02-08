@@ -1,0 +1,28 @@
+.wpcf7-form-control-wrap {
+  box-sizing: border-box;
+  clear: both;
+  font-size: $size-normal;
+  position: relative;
+  text-align: inherit;
+}
+
+.wpcf7-submit {
+  background-color: var(--primary);
+  border-color: transparent;
+  color: var(--primary-invert);
+
+  &:hover {
+    background-color: var(--accent);
+    color: var(--link-invert);
+    border-color: transparent;
+  }
+
+  &:focus {
+    border-color: transparent;
+    color: var(--link-invert);
+
+    &:not(:active) {
+      box-shadow: $button-focus-box-shadow-size bulmaRgba($primary, 0.25);
+    }
+  }
+}

@@ -1,0 +1,37 @@
+// Colores primarios (primaries colors)
+$primary-100: hsl(45, 88%, 69%);
+$primary: hsl(45, 88%, 67%);
+$primary-300: hsl(45, 88%, 62%);
+
+$brand-color: hsl(45, 88%, 58%);
+
+// Color de enfasis (accent colors)
+$accent: hsl(45, 54%, 43%);
+$accent-secondary: hsl(229, 66%, 40%);
+// Colores Neutros (Neutrals colors)
+$black: hsl(45, 16%, 4%);
+$black-bis: hsl(45, 16%, 7%);
+$black-ter: hsl(45, 16%, 14%);
+
+$grey-darker: hsl(45, 16%, 21%);
+$grey-dark: hsl(45, 16%, 29%);
+$grey: hsl(45, 16%, 48%);
+$grey-light: hsl(45, 22%, 71%);
+$grey-lighter: hsl(45, 22%, 86%);
+$grey-lightest: hsl(45, 22%, 90%);
+
+$white-ter: hsl(45, 22%, 92%);
+$white-bis: hsl(45, 22%, 95%);
+$white: hsl(45, 22%, 98%);
+
+// Branding Color Social Network
+$brand-whatsapp: #45d354;
+$brand-linkedin: #0077b5;
+$brand-facebook: #4460a0;
+$brand-youtube: #ed2524;
+
+// Colores Invertidos
+$light-invert: $black-ter;
+$dark-invert: $white-ter;
+$primary-invert: $black-ter;
+$link-invert: $white-ter;

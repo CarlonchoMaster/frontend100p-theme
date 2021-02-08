@@ -1,0 +1,238 @@
+$navbar-dropdown-border-top: 2px solid $border;
+
+.menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: $z-modal;
+  min-height: 100vh;
+  padding: 0.75em;
+  background-color: var(--primary);
+  transition: transform 0.3s;
+  transform: translateX(100%);
+
+  .button-back {
+    background-color: var(--primary-300);
+    border-color: var(--primary-300);
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    padding-top: 0.4em;
+    margin-bottom: 1.2em;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: var(--accent);
+      border-color: var(--accent);
+      color: var(--white-ter);
+    }
+  }
+
+  &.show {
+    transform: translateX(0);
+  }
+
+  @include desktop {
+    position: relative;
+    left: 0;
+    right: initial;
+    min-height: $navbar-height;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    transform: translateX(0);
+
+    .button-back {
+      display: none;
+    }
+  }
+}
+
+.menu-list {
+  a {
+    color: var(--primary-invert);
+  }
+
+  .menu-item {
+    position: relative;
+
+    &, a {
+      cursor: pointer;
+    }
+
+    &.active > a, &.current-menu-item > a {
+      background-color: var(--link);
+      color: var(--link-invert);
+    }
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+    height: 100%;
+
+    li ul {
+      margin: 0;
+    }
+
+    .menu-item,
+    a {
+      border-radius: $radius;
+      display: flex;
+      align-items: stretch;
+    }
+
+    .menu-item {
+      align-items: stretch;
+
+      a {
+        align-items: center;
+      }
+    }
+
+    .menu-item .sub-menu {
+      a {
+        color: var(--light-invert);
+      }
+
+      .current_page_item a {
+        color: var(--dark-invert);
+      }
+    }
+  }
+
+  @include hover-hover {
+    .menu-item {
+      a:hover, a:focus, a:active {
+        background-color: var(--accent);
+        color: var(--link-invert);
+      }
+    }
+
+    .menu-item .sub-menu a {
+      &:hover, &:focus, &:active {
+        color: var(--dark-invert);
+      }
+    }
+  }
+}
+
+.menu-item-has-children {
+  align-items: stretch;
+
+  .sub-menu {
+    border-left: 0;
+    border-right: 1px solid var(--accent);
+    padding-left: 0;
+    padding-right: $menu-nested-list-padding-left;
+  }
+
+  @include desktop {
+    .sub-menu {
+      display: none;
+      border-right: 0;
+      padding-right: 0;
+      background-color: $scheme-main;
+      border-bottom-left-radius: $radius-large;
+      border-bottom-right-radius: $radius-large;
+      border-top: $navbar-dropdown-border-top;
+      box-shadow: 0 8px 8px rgba(#0f1215, 0.1);
+      @include ltr-position(0, false);
+      position: absolute;
+      top: 100%;
+      min-width: 100%;
+      z-index: $navbar-z;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+
+      .menu-item a {
+        white-space: nowrap;
+        width: 100%;
+        border-radius: 0;
+      }
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-within {
+      .sub-menu {
+        display: block;
+      }
+    }
+  }
+}
+
+.menu-label {
+  text-align: right;
+
+  @include desktop {
+    display: none;
+  }
+}
+
+.menu-brand {
+  color: var(--black-ter);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &-logo {
+    display: inline-block;
+    height: $size-6 * 3.5;
+    margin-right: 0.4em;
+
+    .logo-bg {
+      fill: var(--black-ter);
+    }
+
+    .logo-primary {
+      fill: var(--brand-color);
+    }
+  }
+
+  &-text {
+    font-size: $size-6 * 1.9;
+    font-family: $family-secondary;
+    font-weight: 700;
+  }
+
+  @include desktop {
+    justify-content: flex-start;
+
+    &-logo {
+      height: $size-6 * 2.5;
+    }
+
+    &-text {
+      font-size: $size-6 * 1.4;
+    }
+  }
+
+  @include widescreen {
+    &-text {
+      font-size: $size-6 * 2;
+    }
+  }
+}
+
+.overlay-screen {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  background: rgba(black, 0.7);
+  z-index: $z-fixed;
+
+  &.show {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+  }
+}

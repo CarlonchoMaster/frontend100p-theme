@@ -1,0 +1,62 @@
+.content {
+  padding-left: $spacer * 0.9;
+  padding-right: $spacer * 0.9;
+  padding-top: 2.5vw;
+
+  figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  h1 {
+    font-size: 2 * $body-font-size;
+  }
+
+  h2 {
+    font-size: 1.75 * $body-font-size;
+  }
+
+  h3 {
+    font-size: 1.5 * $body-font-size;
+  }
+
+  h4 {
+    font-size: 1.25 * $body-font-size;
+  }
+
+  h5 {
+    font-size: $body-font-size;
+  }
+
+  h6 {
+    font-size: 0.75 * $body-font-size;
+  }
+
+  pre {
+    padding: 0.4em;
+  }
+
+  @include c-mobile {
+    pre {
+      padding: 0.6em;
+    }
+  }
+
+  @include tablet {
+    pre {
+      padding: 0.8em;
+    }
+  }
+
+  @include desktop {
+    pre {
+      padding: 1em;
+    }
+  }
+
+  @media print {
+    padding-top: 0.6em;
+    padding-left: 0;
+    padding-right: 0.5em;
+  }
+}
