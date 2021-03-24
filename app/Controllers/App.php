@@ -30,4 +30,9 @@ class App extends Controller
         }
         return get_the_title();
     }
+
+    public static function getYoutubeId()
+    {
+        return get_field('youtube_id', get_the_ID());
+    }
 }

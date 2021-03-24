@@ -30,38 +30,13 @@
   }
 }
 
-.blog-page {
-  .post {
-    margin-bottom: 1em;
-  }
-
-  .post .author {
-    margin-bottom: 0.5em;
-  }
-
-  .post .excerpt {
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 4;
-    overflow: hidden;
-  }
-
-  @include c-mobile {
-    .post {
-      margin-bottom: 1.25em;
-    }
-  }
-
-  @include tablet {
-    .post {
-      margin-bottom: 1.5em;
-    }
-  }
-
-  @include desktop {
-    .post {
-      margin-bottom: 2em;
-    }
-  }
+.pages-cluster .excerpt {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
 }
 
+.has-text-youtube {
+  color: $brand-youtube;
+}

@@ -10,7 +10,7 @@
 
 @section('content')
 <section class="portfolio-page">
-    @while(have_posts()) @php(the_post())
+    @while(have_posts()) @php the_post() @endphp
     @if(has_post_thumbnail())
     <figure>
         <a href="{{ get_the_post_thumbnail_url(null, 'full') }}" target="_blank">{!! get_the_post_thumbnail(null, 'full') !!}</a>
@@ -21,10 +21,11 @@
     @endif
     @include('partials.page-header')
     @include('partials.content-page')
-    @php($youtubeLink = $get_youtube_field)
-    @if($youtubeLink)
+  @php $youtube_link= App::getYoutubeId() @endphp
+    @if($youtube_link)
+    <h3>Video demostrativo del proyecto</h3>
     <figure class="image is-16by9">
-        <iframe class="has-ratio" src="{{ $youtubeLink }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="has-ratio" src="https://www.youtube.com/embed/{{ $youtube_link }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </figure>
     @endif
     @endwhile

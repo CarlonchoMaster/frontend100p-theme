@@ -1,5 +1,4 @@
 // Colores primarios (primaries colors)
-$brand-color: hsl(210, 100%, 60%);
 $primary: hsl(210, 100%, 66%);
 $primary-100: lighten($primary, 2%);
 $primary-300: darken($primary, 5%);
@@ -33,6 +32,7 @@ $brand-whatsapp: #45d354;
 $brand-linkedin: #0077b5;
 $brand-facebook: #4460a0;
 $brand-youtube: #ed2524;
+$brand-color: #1d8eff;
 
 // Colores Invertidos
 $light-invert: $black-ter;
@@ -46,3 +46,23 @@ $strong-color: $accent;
 
 // Colores de Menu.scss
 $menu-label-color: $grey-lighter;
+
+$variablesInRoots: (
+  primary-100: $primary-100,
+  primary-300: $primary-300,
+  accent: $accent,
+  accent-300: $accent-300,
+  accent-secondary: $accent-secondary,
+  accent-secondary-300: $accent-secondary-300,
+  brand-color: $brand-color,
+  brand-whatsapp: $brand-whatsapp,
+  brand-linkedin: $brand-linkedin,
+  brand-facebook: $brand-facebook,
+  brand-youtube: $brand-youtube,
+  grey-lightest: $grey-lightest
+);
+
+$custom-colors: (
+  accent: ($accent, $dark-invert),
+  brand-color: ($brand-color, $light-invert)
+);

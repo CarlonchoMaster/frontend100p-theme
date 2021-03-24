@@ -1,28 +1,20 @@
-.wpcf7-form-control-wrap {
-  box-sizing: border-box;
-  clear: both;
-  font-size: $size-normal;
-  position: relative;
-  text-align: inherit;
-}
-
-.wpcf7-submit {
-  background-color: var(--primary);
-  border-color: transparent;
-  color: var(--primary-invert);
-
-  &:hover {
-    background-color: var(--accent);
-    color: var(--link-invert);
-    border-color: transparent;
+.wpforms-form .wpforms-field-container {
+  input[type=text].wpforms-field-medium {
+    @extend %input;
   }
 
-  &:focus {
-    border-color: transparent;
-    color: var(--link-invert);
+  input[type=email].wpforms-field-medium {
+    @extend %input;
+  }
 
-    &:not(:active) {
-      box-shadow: $button-focus-box-shadow-size bulmaRgba($primary, 0.25);
-    }
+  textarea.wpforms-field-medium {
+    @extend %input-textarea;
   }
 }
+
+.wpforms-form .wpforms-submit-container {
+  button[type=submit].wpforms-submit {
+    @extend .button;
+  }
+}
+

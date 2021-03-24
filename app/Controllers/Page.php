@@ -51,7 +51,7 @@ class Page extends Controller
                 $string .= '</h2></header>';
 
                 if (!empty(get_the_excerpt($child->ID))) {
-                    $string .= '<p class="content">' . get_the_excerpt($child->ID) . '</p>';
+                    $string .= '<p class="content excerpt">' . get_the_excerpt($child->ID) . '</p>';
                 }
 
                 $string .= '</div></section></div>';

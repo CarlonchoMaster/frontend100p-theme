@@ -5,9 +5,9 @@
 @import "abstracts/custom-mixins";
 
 @import "vendors/bulma";
+@import "vendors/highlightjs";
 
 @import "base/root";
-@import "base/custom-content";
 
 @import "layout/header";
 @import "layout/navigation";
@@ -16,6 +16,7 @@
 @import "layout/tinymce";
 
 @import "components/icons";
+@import "components/custom-content";
 @import "components/floating-buttons";
 @import "components/forms";
 @import "components/wp-classes";
@@ -25,5 +26,6 @@
 @import "components/custom-print";
 
 @import "pages/pages";
+@import "pages/posts";
 @import "pages/about";
 @import "pages/contact";

@@ -6,6 +6,7 @@ $small-font-size: 0.875 * $body-font-size;
 $pre-font-size: $small-font-size;
 $pre-code-font-size: $body-font-size;
 $fullhd-enabled: false;
+$body-line-height: 1.6;
 
 // Variable para los estilos de wordpress
 $spacer: 1em;
@@ -14,21 +15,6 @@ $z-normal: 1;
 $z-tooltip: 10;
 $z-fixed: 100;
 $z-modal: 1000;
-
-$variablesInRoots: (
-  primary-100: $primary-100,
-  primary-300: $primary-300,
-  accent: $accent,
-  accent-300: $accent-300,
-  accent-secondary: $accent-secondary,
-  accent-secondary-300: $accent-secondary-300,
-  brand-color: $brand-color,
-  brand-whatsapp: $brand-whatsapp,
-  brand-linkedin: $brand-linkedin,
-  brand-facebook: $brand-facebook,
-  brand-youtube: $brand-youtube,
-  grey-lightest: $grey-lightest
-);
 
 // Variables z-index sobrescritas de los Componentes
 $modal-z: $z-modal;
@@ -53,7 +39,7 @@ $content-heading-weight: 700;
 $title-weight: 700;
 
 // Personalización de Generics.scss
-$pre-code-font-size: $body-font-size * 0.8;
+$pre-code-font-size: $body-font-size * 0.75;
 
 // Personalizacion de Navbar
 $navbar-height: 3.25rem;
