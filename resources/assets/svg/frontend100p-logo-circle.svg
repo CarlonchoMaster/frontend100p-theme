@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
     <defs>
         <style>
-            .background-logo {
+            .backgound-logo {
                 fill: var(--brand-color);
             }
 
@@ -12,7 +12,7 @@
     </defs>
     <g id="Capa_2" data-name="Capa 2">
         <g id="isotipo">
-            <rect class="background-logo" width="1080" height="1080" />
+            <rect class="backgound-logo" width="1080" height="1080" rx="540" />
             <polygon class="text-logo"
                 points="631.36 293.71 635.53 286.51 738.03 286.51 733.62 293.71 449.17 786.29 445.07 793.49 349.79 793.49 342.83 793.49 631.36 293.71" />
             <path class="text-logo"

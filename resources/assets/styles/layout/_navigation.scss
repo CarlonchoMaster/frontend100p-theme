@@ -185,14 +185,6 @@ $navbar-dropdown-border-top: 2px solid $border;
     display: inline-block;
     height: $size-6 * 3.5;
     margin-right: 0.4em;
-
-    .logo-bg {
-      fill: var(--brand-color);
-    }
-
-    .logo-primary {
-      fill: var(--light-invert);
-    }
   }
 
   &-text {

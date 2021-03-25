@@ -1,3 +1,4 @@
+// Estilos de WP-Forms
 .wpforms-form .wpforms-field-container {
   input[type=text].wpforms-field-medium {
     @extend %input;
@@ -18,3 +19,11 @@
   }
 }
 
+// Estilos de contact forms
+.wpcf7-form-control-wrap {
+  @extend .control;
+}
+
+.wpcf7-submit {
+  @extend .is-primary;
+}

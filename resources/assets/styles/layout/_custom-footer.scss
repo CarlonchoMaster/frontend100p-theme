@@ -6,35 +6,19 @@
 }
 
 .network-linkedin {
-  .bg-linkedin {
-    fill: var(--brand-linkedin);
-  }
+  color: var(--brand-linkedin);
 }
 
 .network-facebook {
-  .bg-facebook {
-    fill: var(--brand-facebook);
-  }
+  color: var(--brand-facebook);
 }
 
 .network-youtube {
-  .bg-youtube {
-    fill: var(--brand-youtube);
-  }
-
-  .youtube-invert {
-    fill: var(--white);
-  }
+  color: var(--brand-youtube);
 }
 
 .network-whatsapp {
-  .bg-whatsapp {
-    fill: var(--brand-whatsapp);
-  }
-
-  .whatsapp-invert {
-    fill: var(--white);
-  }
+  color: var(--brand-whatsapp);
 }
 
 .footer {
