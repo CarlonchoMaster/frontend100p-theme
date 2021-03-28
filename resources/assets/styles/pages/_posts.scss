@@ -59,9 +59,53 @@ $post-font-size: $body-font-size + 0.1;
   }
 
   @media print {
-    padding-top: 0.6rem;
-    padding-left: 0;
-    padding-right: 0.5rem;
+    padding: 0;
+    font-size: $post-font-size - 0.3;
+
+    h1 {
+      font-size: 2 * ($post-font-size - 0.4);
+    }
+
+    h2 {
+      font-size: 1.75 * ($post-font-size - 0.4);
+    }
+
+    h3 {
+      font-size: 1.5 * ($post-font-size - 0.4);
+    }
+
+    h4 {
+      font-size: 1.25 * ($post-font-size - 0.4);
+    }
+
+    h5 {
+      font-size: ($post-font-size - 0.4);
+    }
+
+    h6 {
+      font-size: 0.75 * ($post-font-size - 0.4);
+    }
+
+    @page {
+      size: A4 portrait;
+      margin: 1cm;
+    }
+
+    .entry-content a[href]::after {
+      content: " (" attr(href) ")";
+    }
+
+    .entry-content .image.is-16by9 {
+      padding-top: 0;
+    }
+
+    .entry-content .image .has-ratio {
+      display: none;
+    }
+
+    .entry-content .image[data-video]::before {
+      content: " (" attr(data-video) ")";
+    }
   }
 }
 
@@ -103,3 +147,4 @@ $post-font-size: $body-font-size + 0.1;
     }
   }
 }
+

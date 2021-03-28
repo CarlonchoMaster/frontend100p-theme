@@ -11,7 +11,7 @@
     @php the_content() @endphp
     @if($youtube_link)
       <h2>Video relacionado al articulo</h2>
-      <figure class="image is-16by9">
+      <figure class="image is-16by9" data-video="https://www.youtube.com/watch?v={{ $youtube_link }}">
         <iframe class="has-ratio" src="https://www.youtube.com/embed/{{ $youtube_link }}" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </figure>
